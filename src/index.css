@@ -174,7 +174,33 @@ textarea {
   flex-wrap: wrap;
 }
 
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left{
+  display: flex;
+  flex-direction: row;
+}
+.right{
+  display: flex;
+  flex-direction: row-reverse;
+  flex-flow: row-reverse;
+}
+.text-center{
+  text-align: center;
+}
+.space-around{
+  display: flex;
+  justify-content: space-around;
+}
 .space-between {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -191,7 +217,9 @@ textarea {
   margin-right: var(--spacing-two);
   margin-left: var(--spacing-two);
 }
-
+.rounded{
+  border-radius: 69px;
+}
 .my-1 {
   margin-top: var(--spacing-one);
   margin-bottom: var(--spacing-one);

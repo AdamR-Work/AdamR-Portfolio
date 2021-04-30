@@ -1,36 +1,42 @@
 import React,{useState} from 'react';
 import Nav from './components/Nav';
-// import About from './components/About';
-// import Projects from './components/Projects';
-// import ContactForm from './components/Contact';
-// import Resume from './components/Resume';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
 
 
 function App() {
 
-  const [navChoice] = useState([
-    {name:'about'},
-    {name:'Projects'},
-    {name:'Resume'},
-    {name:'ContactForm'}
-  ]);
+  const [navChoice, setCurrentNav]= useState('About');
 
-  const [currentNav, setCurrentNav]=useState(navChoice[0]);
-
+ const renderPage = () => {
+ 
+    switch (navChoice) {
+      case 'About':
+        return <About />;
+      case 'Projects':
+        return <Projects />;
+      case 'Contact':
+        return <Contact />;
+      case 'Resume':
+        return <Resume />;
+      default:
+        return <About />;
+    }
+    
+  };
   return (
     <div className="mainapp"> 
-         <Nav
+      <Nav
            navChoice={navChoice}
            setCurrentNav={setCurrentNav}
-           currentNav={currentNav}
-           >
-      </Nav>
+      >
+      </Nav> 
       <main>
-        {/* <About></About>
-        <Projects></Projects>
-        <Resume></Resume>
-        <ContactForm></ContactForm> */}
+       {renderPage(navChoice)}
       </main>
+      <footer> Github linkedIn 3App</footer>
     </div>
   );
 }

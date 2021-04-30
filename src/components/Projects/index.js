@@ -13,11 +13,14 @@ function Projects() {
           dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh.
           Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
         </p>
-        
-<a href="https://via.placeholder.com/150"><img alt="project 1"src="https://via.placeholder.com/150"></img></a>
+        <div className="flex-column center space-around ">
+<a className="my-2" href="https://via.placeholder.com/150"><img alt="project 1"src="https://via.placeholder.com/150"></img></a>
+<a className="my-2" href="https://via.placeholder.com/150"><img alt="project 1"src="https://via.placeholder.com/150"></img></a>
+<a className="my-2" href="https://via.placeholder.com/150"><img alt="project 1"src="https://via.placeholder.com/150"></img></a>
+<a className="my-2" href="https://via.placeholder.com/150"><img alt="project 1"src="https://via.placeholder.com/150"></img></a>
 
 
-      
+      </div>
       
         </div>
 

@@ -1,12 +1,11 @@
 import React from 'react';
-import {capitalizeFirstLetter} from '../../utils/helpers'
-function Nav(props) {
-    const{
-        navChoice=[],
-        currentNav,
-        setCurrentNav
-    }=props;
 
+function Nav(props) {
+ const {
+     navChoice,
+     setCurrentNav
+ }=props;
+ const navName = ['About', 'Projects', 'Contact', 'Resume']
 
   return (
     <header className="flex-row px-1">
@@ -17,19 +16,19 @@ function Nav(props) {
     </h2>
     <nav>
       <ul className="flex-row space-between">
-      {navChoice.map((navChoice) => (
-            <li className={`mx-1 href="#${navChoice.name}" ${
-                currentNav.name === navChoice.name && 'navActive'
-                }`} key={navChoice.name}>
-              <span
-                onClick={() => {
-                    setCurrentNav(navChoice)
-                }}
-              >
-                {capitalizeFirstLetter(navChoice.name)}
-              </span>
-            </li>
-          ))}
+      {navName.map(navName => (
+        <li className="nav-item space-between" key={navName}>
+          <a
+            href={'#' + navName}
+            onClick={() => setCurrentNav(navName)}
+            className={
+              navChoice === navName ? 'nav-link navActive' : 'nav-link'
+            }
+          >
+            {navName}
+          </a>
+        </li>
+      ))}
       
       </ul>
     </nav>
@@ -38,9 +37,6 @@ function Nav(props) {
 }
 
 export default Nav;
-
-//Below was just to view
-
 
 // return (
 //     <header className="flex-row px-1">
@@ -51,29 +47,19 @@ export default Nav;
 //     </h2>
 //     <nav>
 //       <ul className="flex-row space-between">
-//         <li className="mx-2 space-between">
-//           <a  href="#about">
-//             About me
-//           </a>
-//         </li>
-//         <li className="mx-2 space-between">
-
-//         <a  href="#projects">
-//             Projects
-//           </a>
-//           </li>
-//           <li className="mx-2 space-between">
-
-//         <a  href="#resume">
-//             Resume     
-//          </a>
-//         </li>
-//          <li className="mx-2 space-between">
-
-//         <a  href="#contact">
-//             Contact Me
-//           </a>
-//         </li>          
+//       {navChoice.map((navChoice) => (
+//             <li className={`mx-1 href="#${navChoice}" ${
+//                 currentNav === navChoice && 'navActive'
+//                 }`} key={navChoice}>
+//               <span
+//                 onClick={() => {
+//                     setCurrentNav(navChoice)
+//                 }}
+//               >
+//                 {capitalizeFirstLetter(navChoice)}
+//               </span>
+//             </li>
+//           ))}
       
 //       </ul>
 //     </nav>
