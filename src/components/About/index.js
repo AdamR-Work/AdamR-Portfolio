@@ -1,10 +1,10 @@
 import React from 'react';
 import profile from '../../assets/profile.jpg'
-import neck from '../../assets/neck.jpg'
+import alita from '../../assets/alita.jpg'
 import profilepic from '../../assets/profilepic.jpg'
 
-function About(props){
-    const {setCurrentNav, navName, navChoice}=props;
+function About({setCurrentNav}){
+    
     return(
         <div className="aboutSection">
 <section className="my-1">
@@ -18,17 +18,16 @@ function About(props){
         <img src={profile} className="my-2 rounded" style={{ width: "50%", height: "50%" }} alt="cover" />
     </div>
     <div className="my-2 right flex-end">
-          <p className=""> Father to Alita,</p>
-        <img src={profile} className="my-2 rounded" style={{ width: "50%", height: "50%" }} alt="cover" />
+          <p className=""> Father to my smart and beautiful daughter Alita.</p>
+        <img src={alita} className="my-2 rounded" style={{ width: "50%", height: "50%" }} alt="cover" />
     </div>
     <div className="my-2">
-          <p>Father to my smart and beautiful daughter Alita. 
-        </p>
+        <a   href='#Projects' 
+      onClick={() => setCurrentNav("Projects")}
+      >Here are some of my projects</a>  
         </div>
       </section>
-      <a   href='#Projects' 
-      onClick={() => setCurrentNav("Projects")}
-      >Here are some of my projects</a>
+     
       </div>
     )
 }

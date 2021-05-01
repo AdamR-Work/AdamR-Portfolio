@@ -14,15 +14,15 @@ function App() {
  
     switch (navChoice) {
       case 'About':
-        return <About />;
+        return <About setCurrentNav={setCurrentNav}/>;
       case 'Projects':
-        return <Projects />;
+        return <Projects setCurrentNav={setCurrentNav} />;
       case 'Contact':
-        return <Contact />;
+        return <Contact setCurrentNav={setCurrentNav}/>;
       case 'Resume':
-        return <Resume />;
+        return <Resume setCurrentNav={setCurrentNav}/>;
       default:
-        return <About />;
+        return <About setCurrentNav={setCurrentNav}/>;
     }
     
   };

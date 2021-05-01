@@ -1,5 +1,7 @@
 import React from 'react';
-function Projects() {
+function Projects(props) {
+  const {setCurrentNav}=props;
+
   return (
     <section className="my-5">
       <h1 id="about">My many projects</h1>
@@ -23,7 +25,9 @@ function Projects() {
       </div>
       
         </div>
-
+        <a   href='#Resume' 
+      onClick={() => setCurrentNav("Resume")}
+      >To the Resume</a>
     </section>
   );
 }

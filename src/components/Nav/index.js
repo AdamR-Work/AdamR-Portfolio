@@ -5,7 +5,7 @@ function Nav(props) {
      navChoice,
      setCurrentNav
  }=props;
- const navName = ['About', 'Projects', 'Contact', 'Resume']
+ const navName = ['About', 'Projects', 'Resume', 'Contact']
 
   return (
     <header className="flex-row px-1">
@@ -37,32 +37,3 @@ function Nav(props) {
 }
 
 export default Nav;
-
-// return (
-//     <header className="flex-row px-1">
-//     <h2>
-//       <a data-testid="link" href="/">
-//         <span role="img" aria-label="name">AdamR </span> 
-//       </a>
-//     </h2>
-//     <nav>
-//       <ul className="flex-row space-between">
-//       {navChoice.map((navChoice) => (
-//             <li className={`mx-1 href="#${navChoice}" ${
-//                 currentNav === navChoice && 'navActive'
-//                 }`} key={navChoice}>
-//               <span
-//                 onClick={() => {
-//                     setCurrentNav(navChoice)
-//                 }}
-//               >
-//                 {capitalizeFirstLetter(navChoice)}
-//               </span>
-//             </li>
-//           ))}
-      
-//       </ul>
-//     </nav>
-//   </header>
-//   );
-// }
