@@ -11,7 +11,7 @@ function Nav(props) {
     <header className="flex-row px-1 space-around header my-2">
     <h2>
       <a 
-      className="header" href="/">
+      className="header" href="#About">
         <span role="img" aria-label="name">Adam R </span> 
       </a>
     </h2>
