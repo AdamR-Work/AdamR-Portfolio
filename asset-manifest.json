@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/AdamR-Portfolio/static/css/main.830d15ff.chunk.css",
+    "main.js": "/AdamR-Portfolio/static/js/main.bebc0acd.chunk.js",
+    "main.js.map": "/AdamR-Portfolio/static/js/main.bebc0acd.chunk.js.map",
+    "runtime-main.js": "/AdamR-Portfolio/static/js/runtime-main.6f1180fd.js",
+    "runtime-main.js.map": "/AdamR-Portfolio/static/js/runtime-main.6f1180fd.js.map",
+    "static/js/2.461e3a63.chunk.js": "/AdamR-Portfolio/static/js/2.461e3a63.chunk.js",
+    "static/js/2.461e3a63.chunk.js.map": "/AdamR-Portfolio/static/js/2.461e3a63.chunk.js.map",
+    "static/js/3.01c24bcd.chunk.js": "/AdamR-Portfolio/static/js/3.01c24bcd.chunk.js",
+    "static/js/3.01c24bcd.chunk.js.map": "/AdamR-Portfolio/static/js/3.01c24bcd.chunk.js.map",
+    "index.html": "/AdamR-Portfolio/index.html",
+    "static/css/main.830d15ff.chunk.css.map": "/AdamR-Portfolio/static/css/main.830d15ff.chunk.css.map",
+    "static/js/2.461e3a63.chunk.js.LICENSE.txt": "/AdamR-Portfolio/static/js/2.461e3a63.chunk.js.LICENSE.txt",
+    "static/media/Adam-Ramos-Resume.60bd5d32.pdf": "/AdamR-Portfolio/static/media/Adam-Ramos-Resume.60bd5d32.pdf",
+    "static/media/Movie-Streaming-Search.6777f619.png": "/AdamR-Portfolio/static/media/Movie-Streaming-Search.6777f619.png",
+    "static/media/alita.df470de7.jpg": "/AdamR-Portfolio/static/media/alita.df470de7.jpg",
+    "static/media/inventory.d7fb0161.png": "/AdamR-Portfolio/static/media/inventory.d7fb0161.png",
+    "static/media/offline.894b04ab.png": "/AdamR-Portfolio/static/media/offline.894b04ab.png",
+    "static/media/profile.2a4610d8.jpg": "/AdamR-Portfolio/static/media/profile.2a4610d8.jpg",
+    "static/media/profilepic.aa33ddd5.jpg": "/AdamR-Portfolio/static/media/profilepic.aa33ddd5.jpg",
+    "static/media/resume.d9b9feec.png": "/AdamR-Portfolio/static/media/resume.d9b9feec.png",
+    "static/media/run-buddy.c171822f.png": "/AdamR-Portfolio/static/media/run-buddy.c171822f.png",
+    "static/media/that-one-answer.b1d53001.png": "/AdamR-Portfolio/static/media/that-one-answer.b1d53001.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f1180fd.js",
+    "static/js/2.461e3a63.chunk.js",
+    "static/css/main.830d15ff.chunk.css",
+    "static/js/main.bebc0acd.chunk.js"
+  ]
+}
