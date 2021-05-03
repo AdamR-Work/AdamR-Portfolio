@@ -1,10 +1,13 @@
+*{
+  margin: 0;
+  padding:0;
+}
 main {
-  margin: 0 auto;
-  max-width: 90%;
-  padding: 50px 30px;
+  margin: 0;
+  padding: 0;
 }
 :root {
-  --primary: #8c54ff;
+  --primary: #3b3eff;
   --secondary: #f3a847;
   --tertiary: #b12704;
   --light: #fafafa;
@@ -30,11 +33,12 @@ body {
   padding: 0;
   font-weight: 600;
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 24px;
   letter-spacing: 0.1em;
   background: var(--dark);
   color: var(--light);
-  font-family: 'Poiret One', cursive;
+  font-family: 'Lato', sans-serif;
+  
 }
 
 h1,
@@ -51,10 +55,14 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
+  font-family: 'Lato', sans-serif;
+
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-family:'Lobster', cursive ;
+
 }
 
 h3 {
@@ -83,13 +91,29 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
-
-a:hover {
-  text-decoration: underline;
+.fit{
+  width: fit-content;
 }
+a.one {
+  color: var(--tertiary);
+  text-decoration: none;
+  font-weight: bold;
+
+}
+a.one:hover {
+  background-color: cyan;
+}
+a.one:active {
+  background-color: rgb(105, 255, 105);
+} 
+a.one:visited {
+  background-color: cyan;
+}
+
 
 header {
   background: var(--dark);
+  font-family:'Original Surfer', cursive ;
 }
 
 header a {
@@ -124,7 +148,15 @@ img {
 span[role='img'] {
   cursor: default;
 }
-
+.project-title{
+   margin: 0 5rem;
+}
+.project-title2{
+  margin: 0 1rem;
+}
+.project-title2{
+  margin: 0 1rem;
+}
 form {
   width: 40%;
 }
@@ -161,14 +193,22 @@ textarea {
   border: 3px solid #cccccc;
   padding: 5px;
 }
-
+.project-link{
+  font-size: 1rem;
+  margin: 0rem 2rem;
+}
 .container {
   width: 85%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+}
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -195,6 +235,9 @@ textarea {
 .text-center{
   text-align: center;
 }
+.borderimg{
+  border: aqua 3px solid;
+}
 .space-around{
   display: flex;
   justify-content: space-around;
@@ -207,6 +250,26 @@ textarea {
 .flex-end {
   justify-content: flex-end;
 }
+.leftsidebar{
+ width: 33%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ 
+}
+.middlebar{
+  width: 33%;
+
+}
+.rightsidebar{
+  width: 33%;
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+
+
+}
+
 
 .mx-1 {
   margin-right: var(--spacing-one);
@@ -216,6 +279,10 @@ textarea {
 .mx-2 {
   margin-right: var(--spacing-two);
   margin-left: var(--spacing-two);
+}
+.mx-5 {
+  margin-right: var(--spacing-five);
+  margin-left: var(--spacing-five);
 }
 .rounded{
   border-radius: 69px;

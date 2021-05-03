@@ -8,16 +8,17 @@ function Nav(props) {
  const navName = ['About', 'Projects', 'Resume', 'Contact']
 
   return (
-    <header className="flex-row px-1">
+    <header className="flex-row px-1 space-around header my-2">
     <h2>
-      <a data-testid="link" href="/">
-        <span role="img" aria-label="name">AdamR </span> 
+      <a 
+      className="header" href="/">
+        <span role="img" aria-label="name">Adam R </span> 
       </a>
     </h2>
     <nav>
-      <ul className="flex-row space-between">
+      <ul className="footer space-around mx-2">
       {navName.map(navName => (
-        <li className="nav-item space-between" key={navName}>
+        <li className="nav-item space-around mx-2" key={navName}>
           <a
             href={'#' + navName}
             onClick={() => setCurrentNav(navName)}
