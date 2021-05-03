@@ -12,7 +12,7 @@ function App() {
   const [navChoice, setCurrentNav]= useState('About');
 
  const renderPage = () => {
- 
+ // NAV CHOICE DIRECTIONS
     switch (navChoice) {
       case 'About':
         return <About setCurrentNav={setCurrentNav}/>;
@@ -27,6 +27,7 @@ function App() {
     }
     
   };
+  
   return (
     
     <div className="mainapp"> 

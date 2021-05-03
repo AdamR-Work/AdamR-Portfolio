@@ -4,11 +4,12 @@ import { validateEmail } from '../../utils/helpers';
 
 
 function Contact() {
+  // variables for the contact form component
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
   const [errorMessage, setErrorMessage] = useState('');
   const { name, email, message } = formState;
-
+// EVEN HANDLERS for the Form Submit
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!errorMessage) {
@@ -36,7 +37,7 @@ function Contact() {
       console.log('Handle Form', formState);
     }
   };
-
+//   generated code 
   return (
     <section className="px-2 center flex-column">
       <h1 >Contact me</h1>

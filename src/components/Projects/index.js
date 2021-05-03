@@ -8,7 +8,8 @@ import project5 from '../../assets/repos/inventory.png'
 
 function Projects(props) {
   const {setCurrentNav}=props;
-
+//  I plan on reconfiguering this.  It lists the projects but the problem was I want them 
+// to flip from left to right like it is now. But each title and image need special adjustments.
   return (
     <section className="my-5">
       <h1 className="center my-5 mx-5" id="about">Projects I've Worked On From The Last 6 Months</h1>
@@ -36,7 +37,7 @@ function Projects(props) {
               <a className="one mx-1 project-link right" href="https://salty-spire-96574.herokuapp.com/">Deployed Website</a>
          </div></div></div>
         
-         {/* 3 */}
+         {/* proj 3 */}
          <div className="flex-column mx-2 my-2 fit">      
               <span className=" project-title2">PWA Travel Checkbook</span>     
                 <a className="" href="https://guarded-stream-98230.herokuapp.com/">
@@ -46,7 +47,7 @@ function Projects(props) {
               <a className="one mx-1 project-link" href="https://guarded-stream-98230.herokuapp.com/">Deployed Website</a>
          </div></div>
 
-        {/* 4 */}
+        {/* proj 4 */}
       <div className="flex-column mx-2 my-2">      
           <span className=" project-title right">Run Buddy</span>     
             <a className="right" href="https://adamr-work.github.io/run-buddy/">
@@ -56,7 +57,7 @@ function Projects(props) {
               <a className="one mx-1 project-link right" href="https://adamr-work.github.io/run-buddy/">Deployed Website</a>
          </div></div>
 
-         {/* 5 */}
+         {/* proj 5 */}
          <div className="flex-column mx-2 my-2 fit">     
             <span className=" project-title2">Inventory-Server using Sequelize</span>  
                 <a className="" href="https://drive.google.com/file/d/1RnvnqjPsiBK0WTfHrOkGSNBnl6IQBCWh/view">
@@ -66,7 +67,7 @@ function Projects(props) {
               <a className="one mx-1 project-link" href="https://drive.google.com/file/d/1RnvnqjPsiBK0WTfHrOkGSNBnl6IQBCWh/view">Deployed Website</a>
          </div></div>
 
-         {/* 6 */}
+         {/* proj 6 */}
          <div className="flex-column mx-2 my-2 fit">  
               <span className=" project-title2 right">Timed Javascript Test</span>      
                   <a className="right" href="https://adamr-work.github.io/java-quiz/">
@@ -77,6 +78,7 @@ function Projects(props) {
          </div></div>
          
         </div>
+{/* gives them the option once they get to the bottom to redirect  instead of scrolling up */}
         <a   className="center" href='#Resume' 
       onClick={() => setCurrentNav("Resume")}
       >To the Resume</a>

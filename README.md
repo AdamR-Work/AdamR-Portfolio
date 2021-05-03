@@ -17,31 +17,20 @@ Its Adam Ramos' portfolio site made with React
 
 <img src="demo.jpg">
 
+
+<a href="https://adamr-work.github.io/AdamR-Portfolio/" target="_blank">CLICK TO GO TO THE SITE</a>
+
 ## Usage
 
 To give potential employeers info about Adam and his work.
 
-## Installation
-
->none
-
 ## Languages
 
-JavaScript ,HTML ,CSS ,ES6 ,Node 
+JavaScript ,HTML ,CSS ,ES6 ,Node, REACT
 
 ## Questions
 
-### AdamR-Work
+adamrfiles@gmail.com
 
 https://github.com/AdamR-Work/AdamR-Portfolio
-
-## Contributing
-
-
-
-## Tests
-
->no
-
-## Credits
 
