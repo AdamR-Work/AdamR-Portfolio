@@ -4,6 +4,7 @@ import project2 from '../../assets/repos/that-one-answer.png'
 import project3 from '../../assets/repos/offline.png'
 import project4 from '../../assets/repos/run-buddy.png'
 import project5 from '../../assets/repos/inventory.png'
+import project6 from '../../assets/repos/webdev.png'
 
 
 function Projects(props) {
@@ -76,8 +77,18 @@ function Projects(props) {
               <a className="one mx-1 project-link right" href="https://github.com/AdamR-Work/java-quiz">GitHub</a>
               <a className="one mx-1 project-link right" href="https://adamr-work.github.io/java-quiz/">Deployed Website</a>
          </div></div>
-         
+         {/* proj 7 */}
+         <div className="flex-column mx-2 my-2 fit">     
+            <span className=" project-title2">WebDev E-Commerce Site</span>  
+                <a className="" href="https://webdev-gifts1.herokuapp.com/">
+                  <img className="rounded borderimg" style={{width:"50%",height:"50%"}} alt="React app store that sells coding course gear"src={project6}></img></a>
+          <div className="eachproject project-link flex-row ">
+              <a className="one mx-1 project-link " href="https://github.com/mwpx777/webdev-gifts">GitHub</a>
+              <a className="one mx-1 project-link" href="https://webdev-gifts1.herokuapp.com/">Deployed Website</a>
+         </div></div>
+
         </div>
+
 {/* gives them the option once they get to the bottom to redirect  instead of scrolling up */}
         <a   className="center" href='#Resume' 
       onClick={() => setCurrentNav("Resume")}
