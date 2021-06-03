@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 function App() {
 
   const [navChoice, setCurrentNav]= useState('About');
-
+// ??? redo the nav bar better
  const renderPage = () => {
  // NAV CHOICE DIRECTIONS
     switch (navChoice) {
